@@ -1,0 +1,16 @@
+Gen is a file used to generate the two files that the game needs. It creates Variable.txt (used for in game variables) and Inventory.txt (used to keep track of what the player has)
+
+Executing
+---------
+  Windows: Double Click
+  Linux: Type mono Gen.exe
+
+Compiling
+---------
+  Compiled using vbnc2 from Mono but should work in MonoDevelop and Visual Studios
+  vbnc2 Gen.vb
+
+Dependencies
+------------
+  Windows: .NET 2.0
+  Linux: Mono
