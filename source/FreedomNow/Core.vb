@@ -1,37 +1,39 @@
 Imports System
-Imports System.IO
 
-Class Main
+Class GameCore
 Public Readonly Title as string = "FreedomNow"
 Public Readonly Ver as string = "0.1 Alpha"
 Public OS as string = Nothing
-Public GameVars() as string = File.ReadAllLines("Variables.txt") 'Loads Game Vairiables
-Public PlayerInv as string = File.ReadAllText("Inventory.txt") 'Loads Player's Inventory
+Public GameVars() as string 'Loads Game Vairiables
+Public PlayerInv as string 'Loads Player's Inventory
 Public LocationNorth as integer = 0 'Where you are in the world
 Public LocationWest as integer = 0
 Public LocationEast as integer = 0
 Public LocationSouth as integer = 0
 'For Easier Programming
-Dim N as integer = LocationNorth 'FIXME
+Dim N as integer = LocationNorth
 Dim W as integer = LocationWest
 Dim E as integer = LocationEast
 Dim S as integer = LocationSouth
 
 	Public Function Cmd(ByVal command as string) as string
 		command = command.tolower 'makes everything lowercase
-		return SearchForItem(command)
-		If command = "play first intro"then
+		If command = "play first intro" then
 			'Return Intro stuff
 			Return "You awake with the smell of burning wood and the sound of running animals." & VbNewLine & "You see a note on the ground infront of you."
+		
 		ElseIf command.startswith("pick up") = true then
 			PickUp(command.Remove(0, 8))
 			Return "You picked it up."
+		
 		ElseIf command = "help" then
 			'Return help
 			Return "Foobar"
+		
 		ElseIf command = "quit" or command = "exit"
 			Environment.Exit(0)
 			Return "Foobar"
+		
 		Else
 			Return "What?"
 		End If
@@ -39,12 +41,12 @@ Dim S as integer = LocationSouth
 	
 	Public Function RandomEvent() As System.Random 'for future use (random events like a theif apearing)
 		Dim ran as new Random
-		ran.next(0, 10)
+		ran.next(0, 10) 'random number between 0 and 10
 		Return ran
 	End Function
 	
 	Private Function PickUp(ByVal Item as string) As String
-		If Item.StartsWith("#") Then
+		If Item.StartsWith("#") Then 'stops game from loading comments
 			Return "No such item."
 		End If
 		
@@ -82,6 +84,24 @@ Dim S as integer = LocationSouth
 		LocationWest = W
 		LocationEast = E
 		LocationSouth = S
+		Return True
+	End Function
+	
+	Public Function MovePlayer(ByVal Direction as string) as Boolean 'Moves Playre
+		If Direction = "north" then
+			N += 1
+			S -= 1
+		ElseIf Direction = "south" then
+			S += 1
+			N -= 1
+		ElseIf Direction = "west" then
+			W += 1
+			E -= 1
+		ElseIf Direction = "east" then
+			E += 1
+			W -= 1
+		End IF
+		SyncLocation()
 		Return True
 	End Function
 End Class
