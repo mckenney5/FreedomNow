@@ -36,11 +36,11 @@
   <ItemGroup>
     <Compile Include="Game.vb" />
     <Compile Include="AssemblyInfo.vb" />
-    <Compile Include="Main.vb" />
+    <Compile Include="Core.vb" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <ItemGroup>
-    <EmbeddedResource Include="Inventory.txt" />
-    <EmbeddedResource Include="Variables.txt" />
+    <None Include="Variables.txt" />
+    <None Include="Inventory.txt" />
   </ItemGroup>
 </Project>

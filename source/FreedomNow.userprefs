@@ -1,18 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FreedomNow/Main.vb">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FreedomNow/Variables.txt">
     <Files>
-      <File FileName="../Qttg/Items.vb" Line="23" Column="50" />
-      <File FileName="FreedomNow/NPC.vb" Line="57" Column="161" />
-      <File FileName="FreedomNow/Game.vb" Line="44" Column="11" />
-      <File FileName="FreedomNow/Items.vb" Line="52" Column="14" />
-      <File FileName="FreedomNow/Main.vb" Line="60" Column="14" />
+      <File FileName="FreedomNow/Game.vb" Line="7" Column="29" />
+      <File FileName="FreedomNow/Core.vb" Line="90" Column="80" />
+      <File FileName="../../../VB/QuickTerm/QuickTerm/QuickTerminal.vb" Line="1421" Column="72" />
+      <File FileName="FreedomNow/Variables.txt" Line="63" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="FreedomNow" expanded="True">
-            <Node name="Main.vb" selected="True" />
+            <Node name="Variables.txt" selected="True" />
           </Node>
         </State>
       </Pad>
