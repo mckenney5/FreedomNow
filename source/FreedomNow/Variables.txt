@@ -1,0 +1,62 @@
+#Items
+<Name> Knife <Damage> 2 <Desc> A pointy metal tool.
+<Name> Note <Say> Welcome to Quite Tiny Text Commands! <Desc> A paper with writing on it.
+<Name> LockedBox <Unlock> EvilKey <Desc> A magic locked box.
+<Name> UnlockedBox <Open> Magicball <Desc> An open box with a round object inside.
+<Name> MagicBall <Desc> A magic ball, I think this is important.
+<Name> EvilKey <Desc> This must open something magical.
+<Name> Sword <Damage> 4 <Desc> Oh they are in for it now!
+<Name> ChainMail <Def> 2 <Desc> Metal chain that can protect you.
+<Name> Match<Light> 1 <Desc> Allows you to see in the dark. You only have one.
+<Name> Hands <Damage> 1 <Desc> Your dirty hands.
+<Name> MagicWand <Damage> -1 <Desc> You found it; the wand to rule them all.
+<Name> HealthPotion <Heals> 4 <Desc> Red liquid that heals you.
+<Name> Gems <Desc> Assorted gems
+<Name> Key1 <Desc> Opens something locked; maybe a door.
+<Name> Key3 <Desc> Opens a locked door.
+<Name> Key4 <Desc> A key that has 'TRAP' engraved on it.
+<Name> Rope <Desc> Used to climb.
+<Name> GnuHorn <Desc> A horn of the holy animal. I bet you spit on puppies too.
+<Name> Book1 <Say> S.I.C.P. <Desc> A book with a Geany and a lady on it
+<Name> Book2 <Say> A 'covered work' means either the unmodified Program or a work based on the Program. <Desc> Titled GNU GPL
+
+#Objects
+<Name> LockedDoor1 <key> 1 <Desc> This door seems to be locked.
+<Name> LockedDoor2 <key> 2 <Desc> This door seems to be locked.
+<Name> LockedDoor3 <key> 3 <Desc> This door seems to be locked.
+<Name> OpenWindow <Action> Enter <Desc> An open window.
+<Name> Window <Desc> A boarded up window.
+<Name> Door <Action> Enter <Desc> An unlocked door.
+<Name> TrapDoor <Action> Enter <Desc> An unlocked trap door.
+<Name> LockedTrapDoor <key> 4 <Desc> A locked trap door.
+<Name> Skull <Desc> Eww, I am not touching that!
+<Name> Skeleton <Desc> He looks hungry.
+<Name> Rocks <Desc> Some rocks. The look too heavy to pick up.
+<Name> Ash <Desc> Some smelly black powder.
+
+#NPC
+#Enemy
+<Name> Theif <Attack> 2 <Health> 4 <Desc> A man with a black mask and a hunger for valuables.
+<Name> Goblin <Attack> 1 <Health> 2 <Desc> A little green man.
+<Name> Guard <Attack> 3 <Health> 6 <Desc> A big person in heavy armor.
+<Name> Boss <Attack> 3 <Health> 12 <Desc> A huge man with gray hair and circular glasses. I'd run if I were you...
+<Name> Rat <Attack> 1 <Health> 1 <Desc> An over grown sick grey rat.
+<Name> Beast <Attack> 3 <Health> 1 <Desc> A crazy dog-like animal.
+
+#Peacful
+<Name> Gnu <Attack> -1 <Health> 100 <Desc> A beautiful and worshiped animal.
+<Name> Fox <Attack> 2 <Health> 1 <Desc> A small orange animal.
+<Name> SleepingGuard <Attack> 3 <Health> 6 <Desc> A big sleeping person in heavy armor.
+<Name> Savage <Attack> 1 <Health> 1 <Desc> A sickly man.
+
+#Friends
+<Name> WiseMan <Say> They say that evil is the key to locked magic. <Desc> A tall man with a long white beard and a blue robe with haskell writing on it.
+<Name> Dog <Say> Woof Woof Woof! <Desc> Who let the dogs out?
+<Name> Monk <Say> Praise all that is free, all that is RMS! <Desc> A bald man with a neck beard with what seems to be the letters FSF on his head.
+<Name> Trader <Say> I have what you seek; just show me the gems first. <Desc> A small man in a white tunic.
+<Name> MeditatingMan <Say> Tule takaisin minulle Tux. Linus kaipaa sinua. <Desc> An odd man with circlular glasses.
+<Name> DennisTheGhost <Say> Noooooo one remembers meeee! They all cry for steveee. <Desc> An old man with a grey goatie.
+<Name> RMS <Say> Thank you. You have stoped the evil and freed the people. <Desc> A slightly large looking hippy.
+
+#Player
+<Name> Player <Attack> 1 <Health> 5

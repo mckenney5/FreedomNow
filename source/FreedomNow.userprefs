@@ -1,0 +1,33 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FreedomNow/Main.vb">
+    <Files>
+      <File FileName="../Qttg/Items.vb" Line="23" Column="50" />
+      <File FileName="FreedomNow/NPC.vb" Line="57" Column="161" />
+      <File FileName="FreedomNow/Game.vb" Line="44" Column="11" />
+      <File FileName="FreedomNow/Items.vb" Line="52" Column="14" />
+      <File FileName="FreedomNow/Main.vb" Line="60" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="FreedomNow" expanded="True">
+            <Node name="Main.vb" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>Item2Loaded</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
