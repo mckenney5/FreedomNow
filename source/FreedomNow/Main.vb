@@ -1,17 +1,12 @@
 Imports System
 Imports System.IO
-Imports System.Reflection
-Imports System.Resources
+
 Class Main
 Public Readonly Title as string = "FreedomNow"
 Public Readonly Ver as string = "0.1 Alpha"
 Public OS as string = Nothing
-'Dim Nigg as Stream = Assembly.GetExecutingAssembly.GetMainifestResourceStream("FreedomNow.Variables.txt")
-'Dim oStream As System.IO.Stream
-'Dim oAssembly As System.Reflection.Assembly = Me.GetType.Assembly.GetEntryAssembly()
-'Dim my_namespace As String = oAssembly.GetName().Name.ToString()
-'Public GameVars() as string = File.ReadAllLines("Variables.txt") 'Loads Game Vairiables
-'Public PlayerInv as string = File.ReadAllText("Inventory.txt") 'Loads Player's Inventory
+Public GameVars() as string = File.ReadAllLines("Variables.txt") 'Loads Game Vairiables
+Public PlayerInv as string = File.ReadAllText("Inventory.txt") 'Loads Player's Inventory
 Public LocationNorth as integer = 0 'Where you are in the world
 Public LocationWest as integer = 0
 Public LocationEast as integer = 0
@@ -42,7 +37,7 @@ Dim S as integer = LocationSouth
 		End If
 	End Function
 	
-	Public Function RandomEvent() As System.Random 'for future use
+	Public Function RandomEvent() As System.Random 'for future use (random events like a theif apearing)
 		Dim ran as new Random
 		ran.next(0, 10)
 		Return ran
@@ -56,6 +51,7 @@ Dim S as integer = LocationSouth
 		If N = 0 andalso W = 0 andalso E = 0 andalso S = 0 then
 			If Item = "note" andalso PlayerInv.Contains(Item) = False then
 				Return Add(Item)
+			End If
 		End If
 	End Function
 	
@@ -67,7 +63,7 @@ Dim S as integer = LocationSouth
 			Return False
 		End Try
 	End Function
-	'Declaration
+
 	Public Function Remove (startIndex As Integer, count As Integer) As String
 		'Usage
 		Dim instance As String
@@ -78,6 +74,14 @@ Dim S as integer = LocationSouth
 	End Function
 	
 	Public Function SearchForItem(ByVal Item As String) As String
-	    GetInv("FreedomNow.Variables.txt")
+		'Future Use
+	End Function
+	
+	Public Function SyncLocation() As Boolean 'Syncs the location vars
+		LocationNorth = N
+		LocationWest = W
+		LocationEast = E
+		LocationSouth = S
+		Return True
 	End Function
 End Class
