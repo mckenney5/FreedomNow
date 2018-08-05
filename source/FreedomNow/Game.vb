@@ -45,10 +45,12 @@ Dim command as string = Nothing
 	End Sub
 
 	Sub Game()
-		Console.Write(prompt)
-		command = Console.ReadLine()
-		Console.WriteLine(GameCore.Cmd(command))
-		Game()
+		While 1
+			Console.Write(prompt)
+			command = Console.ReadLine()
+			Console.WriteLine(GameCore.Cmd(command))
+			Game()
+		End While
 	End Sub
 	
 	Private Sub DebugMenu()
