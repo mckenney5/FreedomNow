@@ -1,3 +1,5 @@
+# !-- ARCHIVE ONLY --!
+
 FreedomNow
 ==========
 A cross-platform text based adventure game with ties to the technology world including the GNU movement and Linux. The program was created in Visual Basic on Debian GNU/Linux
